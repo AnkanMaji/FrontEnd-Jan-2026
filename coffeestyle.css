@@ -1,0 +1,81 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page layout (for footer positioning) */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #6f4e37, #a67b5b);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Flex Container */
+.container {
+    flex: 1; /* pushes footer down */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 30px;
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background: #fff8f0;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Images */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* important fix */
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    height: 50px;
+    background: #6f4e37;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
